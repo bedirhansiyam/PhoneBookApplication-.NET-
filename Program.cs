@@ -14,7 +14,7 @@ class Program
             do
         {
             result = int.TryParse(Console.ReadLine(), out chosen);
-            if(chosen == 1 || chosen == 2 || chosen == 3 || chosen == 4 || chosen == 5 || chosen == 0)
+            if(chosen == 1 || chosen == 2 || chosen == 3 || chosen == 4 || chosen == 5 || chosen == 6)
                 result = true;
             else
                 result = false;
@@ -43,7 +43,7 @@ class Program
                 default:
                     break;
             }
-        } while (chosen != 0);
+        } while (chosen != 6);
 
 
     }
@@ -287,6 +287,6 @@ class Program
         Console.WriteLine("(3) Update a number");
         Console.WriteLine("(4) List the phone book");
         Console.WriteLine("(5) Search in the phone book");
-        Console.WriteLine("(0) Exit");
+        Console.WriteLine("(6) Exit");
     }
 }
